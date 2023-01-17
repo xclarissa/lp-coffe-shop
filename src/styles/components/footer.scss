@@ -1,0 +1,7 @@
+.footer {
+  @include flex-center;
+
+  span {
+    color: $primary;
+  }
+}

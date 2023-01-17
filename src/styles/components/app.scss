@@ -1,38 +1,7 @@
 @import '../main';
+@import 'header.scss';
+@import 'footer.scss';
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  @include container;
-
-  &-brand {
-    font-size: 2rem;
-    text-decoration: none;
-  }
-
-  &-navbar {
-    ul {
-      height: 100%;
-      @include flex-center;
-
-      li {
-        margin: 0 1rem;
-
-        .active {
-          color: $primary;
-        }
-
-        a {
-          text-decoration: none;
-
-          &:hover {
-            color: $primary;
-          }
-        }
-      }
-    }
-  }
-}
 
 section {
 
@@ -46,22 +15,33 @@ section {
     @include flex-center;
 
 
-    h4 {
-      margin-bottom: 300px;
+    h4 { 
       font-size: 3rem;
-      font-family: 'Pacifico', cursive;
-      // color: $text; 
+      font-family: $font-secondary;
+      text-align: center;
+      animation: fadeIn 3s;
+      
+      span {
+        display: block;
+        font-family: $font-secondary; 
+
+      }
+ 
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+    
+        to {
+          opacity: 1; 
+        }
+      }
+      
     } 
+
+
 
    
   }
-}
-
-
-.footer {
-  @include flex-center;
-
-  span {
-    color: $primary;
-  }
-}
+} 

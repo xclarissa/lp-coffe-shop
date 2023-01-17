@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  @include container;
+
+  &-brand {
+    font-size: 2rem;
+    text-decoration: none;
+  }
+
+  &-navbar {
+    ul {
+      height: 100%;
+      @include flex-center;
+
+      li {
+        margin: 0 1rem;
+
+        .active {
+          color: $primary;
+        }
+
+        a {
+          text-decoration: none;
+
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}
