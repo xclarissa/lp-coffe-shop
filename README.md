@@ -1,6 +1,7 @@
 # lp-coffe-shop
-Landing page de coffee shop
-Tecnologies:: 
+Coffee shop landing page
+
+Tecnologies:
   - ReactJS
   - Typescript
   - SASS
