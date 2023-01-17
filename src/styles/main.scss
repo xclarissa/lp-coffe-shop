@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'mixins.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: $bg-color;
+  color: $text;
+
+  ul {
+    list-style: none;
+  }
+
+  a, svg {
+    color: $text;
+    transition: .4s;
+  } 
+
+
+}
+
